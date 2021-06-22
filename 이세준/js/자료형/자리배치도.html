@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var memnum = prompt("입장객 수를 입력하시오");
+      var colnum = prompt("한 줄에 앉을 사람 수를 입력하시오");
+
+      var rownum;
+
+      if (memnum != null && colnum != null) {
+        if (memnum % colnum === 0) {
+          rownum = parseInt(memnum / colnum);
+          document.write("필요 좌석은 " + rownum + "입니다.");
+        } else {
+          rownum = parseInt(memnum / colnum) +1;
+          document.write("필요 좌석은 " + rownum + "입니다.");
+        }
+      } else {
+        alert("모든 항목을 제대로 입력하시오");
+      }
+    </script>
+  </body>
+</html>
