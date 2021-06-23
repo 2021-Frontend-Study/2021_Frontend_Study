@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  h1{
+    text-align: center;
+  }
+  #arr{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #cntt{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+</style>
+<title>Document</title>
+</head>
+<body>
+<h1>3의 배수 찾기</h1>
+
+<script>
+  document.write("<div id = 'arr'>")
+  var num = prompt("몇 까지 3의 배수를 찾을까요?")
+  
+  var cnt = 0;
+  for( var i = 1; i<= num;i++){
+    if(i%3 === 0 ){
+      document.write(i + ", ")
+      cnt++;
+    }
+  }
+  document.write("</div>")
+  document.write("<br>")
+
+  document.write("<div id = 'cntt'>")
+  document.write(num + "까지 3의 배수의 개수 : " + cnt)
+  document.write("</div>")
+</script>
+</body>
+</html>
