@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<script>
+  var hi = function(){
+    return "안녕"
+  }
+
+  var hi_1 = () =>{ return "안녕"}
+  var hi_2 = () => "안녕"
+/////////////////////////////////////////////////
+  var user2 = "ㅇㅇㅇ"
+
+  var hi_3 = function(user){
+    user = user2
+    document.write(user + "님 안녕하세요")
+
+  }
+
+  var hi_4 = user =>{
+    user = user2
+    document.write(user + "님 안녕하세요")}
+
+/////////////////////////////////////////////////////////
+  var sum = function(a,b){
+    return a+b;
+  }
+
+  var sum_1 = (a,b) => a,b
+
+
+
+
+  ///////////////////////////
+  document.write(hi_1() + " <br> " )
+  document.write(hi_4(user2)  + "<br>")
+
+
+</script>
+</body>
+</html>
