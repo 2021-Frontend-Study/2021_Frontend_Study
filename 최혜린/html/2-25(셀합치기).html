@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀합치기</title>
+</head>
+
+<body>
+    <table border="1" width="50%">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" width="50%">
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" width="50%">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- 
+셀 합치기는 td의 속성을 이용한다
+colspan은 가로 rowspan은 세로의 셀을 합치는 데 사용된다. 위의 구문에서 보면 
+colspan 3이기때문에 가로 3개가 합쳐서 1로 표현되는것이다.
+rowspan은 2이기대문에 밑에 표는 2가합쳐져 첫 칸이 1 하나로 표시되는것이다. -->
