@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<script>
+  var nums = [1,2,3]
+  //맨 압에 추가는 unshift
+  //push는 단순히 뒤에 넣는다 (위치 상관없는듯?)
+  var ret1 = nums.push(4,5)
+  var xx = nums
+  document.write("length : " + ret1 + " || 배열 : " + nums)
+  document.write("<br>")
+  document.write(xx)
+  document.write("<br>")
+  var ret2 = nums.unshift(0)
+  document.write("length : " + ret2 + " || 배열 : " + nums)
+
+  //pop 은 맨 뒤
+  //shift 는 맨 압
+  document.write("<br>")
+  var char = ["a","b","c","d"]
+  var popped1 = char.pop()
+  document.write("요소 " ,popped1 , "배열" , char )
+  document.write("<br>")
+
+  var popped2 = char.shift()
+  document.write("요소 " , popped2 , "배열 " , char)
+  
+
+  //원하는 위치에서 요소 추가 삭제는 splice ==> java에서 split 
+  //기존 배열 변경됨
+
+  //원하는 위치에서 요소 꺼내기 slice
+  //기존 배열 유지 
+</script>
+</body>
+</html>
