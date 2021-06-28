@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      /*하위 선택자 이렇게 하면 section 안에 있는 p들 모두 적용이 된다.*/
+      /*section >p 이렇게 하면 section 안에 있는 처음에 나오는 p에만 적용이 된다.*/
+      /* section > p {
+        color: blue;
+      } */
+      h1 ~ p {
+        background-color: #222;
+        color: #fff;
+        /* color: blue; */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>예약 방법 & 사용 요금</h1>
+      <p>
+        아직 온라인 예약 신청이 준비되지 않았습니다 <br />전화(xxxx-xxxx-xxxx)로
+        문의하시기 바랍니다.
+      </p>
+
+      
+        <p>가족실(2~4인) : 60,000원/일</p>
+        <p>도미토리(4인 공용) : 25,000원/일</p>
+      
+    </section>
+
+    <section2>
+      <h1>예약 방법 & 사용 요금</h1>
+      <p>
+        아직 온라인 예약 신청이 준비되지 않았습니다 <br />전화(xxxx-xxxx-xxxx)로
+        문의하시기 바랍니다.
+      </p>
+
+      <div>
+        <p>가족실(2~4인) : 60,000원/일</p>
+        <p>도미토리(4인 공용) : 25,000원/일</p>
+      </div>
+    </section2>
+  </body>
+</html>
