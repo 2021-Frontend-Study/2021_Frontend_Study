@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+  body{
+    text-align: center;
+  }
+  .accent{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+<script>
+  //익명 함수 선언
+  var sum = function(a,b){
+    return a+b;
+  }
+  document.write(sum(10,20)+"<br>")
+
+
+
+  (function() {
+    var username = prompt("이름을 입력하시오")
+    document.write("안녕하세요? <span class = 'accent'>" + username + "</span>님!")
+
+  }())
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- 
+  js에서 웹 요소를 여러 방법으로 가져올수 있다
+  그중에서 함수 querySelector()를 사용하여 가져오는 것이 쉽다
+  ()안 클래스 이름이나 id이름 또는 다양한 선택자를 넣을 수 있습니다
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      a:link,
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        width: 500px;
+        margin: 10px auto;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        width: 120px;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 16px;
+        text-align: center;
+      }
+      #result {
+        width: 500px;
+        height: 300px;
+        margin: 30px auto;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+      }
+      p {
+        width: 80%;
+        padding: 10px;
+        line-height: 2em;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+  <button id = "change">글자색 바꾸기  </button>
+  <p>Reprehenderit tempor do quis sunt eu et exercitation deserunt. Laboris adipisicing est sint aliquip nulla pariatur velit irure elit qui id. Dolore aliquip dolore eu ut irure sint Lorem reprehenderit velit. Duis veniam irure cillum anim excepteur culpa pariatur sunt esse. Eu nulla commodo velit ex id dolore incididunt mollit incididunt nisi labore culpa qui ea. Commodo veniam veniam in ipsum ad minim occaecat qui pariatur adipisicing laborum quis.</p>
+
+    <script>
+      var changeBttn = document.querySelector("#change")
+      changeBttn.onclick = changeColor
+
+      function changeColor(){
+        document.querySelector("p").style.color = "red"
+        
+      }
+
+    </script>
+
+
+
+  </body>
+</html>

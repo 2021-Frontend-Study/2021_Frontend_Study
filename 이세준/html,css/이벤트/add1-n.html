@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<script>
+  var input = prompt("수를 입력하시오")
+  function add(num2){
+    var sum = 0;
+    for(var i = 1; i<= num2;i++){
+      sum+= i;
+    }
+    return sum;
+  }
+  document.write("<p> 1부터 " + input + "까지 더한 값은 "+ add(input) + "입니다 </p>")
+
+  document.write("<p> 결과는 : "+ add(input) + "입니다 </p>")
+
+</script>
+</body>
+</html>
