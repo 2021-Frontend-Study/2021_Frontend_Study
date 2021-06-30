@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cavas로 이미지 파일 읽어들이기 </title>
+    <style>
+        canvas{border:2px solid gray;}
+    </style>
+    <script>
+        window.onload=function(){
+            //canvas요소의 객체 가져오기 
+            var canvas =document.getElementById("mycanvas");
+            //canvas의 렌더링 컨텍스트 가져오기 
+            var ctx=canvas.getContext("2d");
+            //이미지 객체 생성하기
+            var img = new Image();
+            //이미지를 읽어들인후 canvas에 그리기
+            img.onload = function(){
+                ctx.drawImage(img,0,0);
+
+            };
+            //이미지의 소스를 url로 지정
+            img.src="./cat.jpeg";
+        };
+    </script>
+</head>
+<body>
+    <canvas id="mycanvas"width="640" height="400"></canvas>
+</body>
+</html>
