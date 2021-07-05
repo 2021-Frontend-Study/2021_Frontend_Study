@@ -2,10 +2,11 @@ const toDoForm = document.getElementById("todo-form"); // form
 const toDoInput = document.querySelector("#todo-form input")
 const toDoList = document.getElementById("todo-list"); // ul
 
+const TODOS_KEY = "todos";
 const toDos = [];
 
 function saveToDos() {
-  localStorage.setItem("todos", JSON.stringify(toDos));
+  localStorage.setItem("TODOS_KEY", JSON.stringify(toDos)); // 값을 string으로 만들 때
 }
 
 function deleteToDo(event) {
@@ -36,3 +37,10 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+if (savedToDos) {
+  const parsedToDos = JSON.parse(savedToDos); // string -> array
+  console.log(parsedToDos);
+  parsedToDos.forEach((item) => console.log("this is the turn of ", item)); // function을 만들기 보다 arrow func 사용
+}
