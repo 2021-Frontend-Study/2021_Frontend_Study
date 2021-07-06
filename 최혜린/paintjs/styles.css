@@ -1,66 +1,116 @@
 @import "reset.css";
+/* @import함수는 단어 그대로 다른 컴퓨터 시스템으로 부터 자기의 시스템안에 데이터등을 들여놓습니다. 
+html파일에 한번에 여러개의 css 파일을 불러올수있는 함수입니다. */
 body {
+  /* body 태그 안에 있는 요소들을 밑에 css형태로 변환한다. */
   background-color: #f6f9fc;
+  /* background-color 는 요소의 배경색을 지정합니다 . */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* font-family 는 선택된 요소에 우선순위가 지정된 이름들을 지정해주게 됩니ㅏㄷ. 폰트를 불러옵니다. */
   display: flex;
+  /* display 속성은 요소를 어떻게 보여줄지 결정합니다.  
+  flex는 container와 items로 나누어집니다. container는 아이템을 감싸는 부모의 요소입니다. 
+  container에서는 flex-flow를 items에서는 flex를 사용합니다. 자동으로 정렬해주는 태그입니다.  */
   flex-direction: column;
+  /* flex -direction은 플렉스 컨테이너 내의 아이템을 배치할때 사용할 주축및 방향을 지정하빈다.
+  column방향은 글 여러줄이 쌓이는 방향대로라는 뜻입니다. */
   align-items: center;
+  /* align-items구문은 그리드 영역에서의 블록축의 항목 정렬을 제어합니다. 
+  center는 플렉스 항목의 여백상자를 교차축의 선중앙에 있다는 뜻입니다. */
   padding: 50px 0px;
+  /* padding 이란 내용과 선 사이의 공간을 말합니다 . 50px 0px만 준것은 위아래,오른쪽 왼쪽으로 나누어
+  패딩을 지정해 준것입니다. */
 }
 
 .canvas {
+  /* .canvas이므로 클래스 선택자입니다.  */
   width: 700px;
+  /* width는 canvas라는 클래스의 가로를 700px로 설정해줍니다. */
   height: 700px;
+  /* height 는 canvas라는 클래스의 세로를 700px로 설정해줍니다. */
   background-color: white;
+  /* canvas라는 클래스이 배경색을 white로 설정해 줍니다. */
   border-radius: 15px;
+  /* canvas라는 클래스의 테두리 경계의 꼭짓점을 둥글게 만듭니다. */
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* canvas라는 클래스이 테두리를 감싼 그림자 효과르 ㄹ추가합니다.  */
 }
 
 .controls {
   margin-top: 80px;
+  /* controls라는 클래스의 바깥여백 영역을 80px로 설정해주는것입니다. */
   display: flex;
+  /* controls라는 클래스의 보여지는 것을 flex로 보여집니다. */
   flex-direction: column;
+  /* contorols라는 클래스의 flex방향은 글이 여러줄로 쌓이는 방향으로 진행됩니다. */
   align-items: center;
+  /* contorols라는 클래스의 align-items는 flex를 기준으로 중앙에 여백상자를 쌓습니다. */
 }
 
 .controls .controls__btns {
+  /* controls라는 클래스 안에 있는 controls__btns에 대한 css를 설정합니다. */
   margin-bottom: 30px;
+  /* controls라는 클래스 안에 있는 controls__btns 요소의 아래쪽에 빠깥여백영역을 30px로 설정합니다. */
 }
 
 
 .controls__btns button {
+  /* contols__btns클래스 안에서의 button태그에 요소에 대해 설정합니다. */
   all: unset;
+  /* all 속성은 모든속성을 초기화합니다. unset은 요소의 모든속성을, 속성이 값을 상속하는경우 상속값으로 아니면 
+  초깃값으로 변경합니다. */
   cursor: pointer;
+  /* cursor속성은 요소위에 마우스 커서가 올라값을떄에 모양을 지정할떄 사용합니다. */
   background-color: white;
+  /* button 태그에뒷배경을 white로 설정합니다. */
   padding: 5px 0px;
+  /* 내용과 선사이의 공간을 5 px , 0px로 지정해줍니다.  */
   width: 80px;
+  /* 가로를 80px로 설정합니다. */
   text-align: center;
+  /* 블록요소나 표의 칸상자의 가로정렬을 설정합니니다. center는 줄상자의 가운대로 정렬합니다. */
   border-radius: 5px;
+  /* 요소 테두리 경계의 꼭짓점을 둥글게 만듭니다.  */
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* 요소의 그림자를 설정해줍니다. */
   border: 2px solid rgba(0, 0, 0, 0.2);
+  /* button의 테두리를 2px의 검정색으로 설정합니다. */
   color: rgba(0, 0, 0, 0.7);
+  /* 버튼의 색깔을 지정해줍니다. */
   text-transform: uppercase;
+  /* 텍스트를 지정해주는 태그입니다. 즉 uppercase는 모든 문자를 대문자로 변환하는 키워드입니다. */
   font-weight: 800;
+  /* 폰트의 가중치를 명시합니다. 즉 800으로 설정하는것입니다. */
   font-size: 12px;
+  /* 폰트의 크기를 12px로 고정해줍니다. */
 }
 
 .controls__btns button:active {
+  /* button을 활성화시킨다라는 뜻이다. 보통 a나 button태그와 같이 사용한다. */
   transform: scale(0.98);
+  /* 각 방향으로의 값을 지정한다. */
 }
 
 .controls .controls__colors {
   display: flex;
+  /* controls클래스 아래있는 contols__colors를 디스플레이에 보여주는 값을 flex처리한다. */
 }
 
 .controls__colors .controls__color {
   width: 50px;
+  /* controls__colors안에 controls__color에 가로를 50px로 설정한다. */
   height: 50px;
+  /* controls__colors안에 controls__color에 세로를 50px로 설정한다. */
   border-radius: 25px;
+  /* controls__colors안에 controls__color 꼭짓점을 25px로 설정한다. */
   cursor: pointer;
+  /* controls__colors안에 controls__color눌렀을떄에 마우스모양을 포인터로 변환한다 */
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* controls__colors안에 controls__color그림자를 설정한다. */
 }
 
 .controls .controls__range {
   margin-bottom: 30px;
+  /* contols아래 controls__range를 아래 내용을 30px로 설정한다. */
 }

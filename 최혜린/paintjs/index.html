@@ -1,27 +1,53 @@
 <!DOCTYPE html>
+<!-- 표준규격인 !DPCTYPE이다. !와 엔터를 같이 누르면 기본적인 규격을 가져올수있다. -->
 <html lang="en">
+<!-- 문서 정의 태그이다. html , head ,meta,title,body순으로 큰 틀을 잡는다고 보면된다.
+     lang ="en"는 이 html을 영어로 정의한것이다. lanag="kor"이나 en을 많이 쓸것이다. -->
 
 <head>
+    <!-- <head></head>태그이다 . 머리 태그로, meta,title,script,link등의 태그를 쓰는데 
+        자바스크립트나 css를 참조시키거나 이 문서에 대해 설명 하는것이 대부분이다.-->
     <meta charset="UTF-8" />
+    <!-- meta태그는 웹서버와 웹브라우저 간에 상호 교환되는 정보를 정의하는데 사용한다. -->
+    <!-- meta charset은 이 사이트에 대한 부가적인 정보를 지정하는 태그이다. 인코딩 정보,키워드등을 나타낸다. -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- meta http-equiv태그는 ie에서만 적용되는 태그이다.가장 최신 브라우저로 보이게 끔 해준다. -->
+    <!-- http-equiv="항목명"content ="정보값" name ="정보이름" 의 형식으로 작성한다. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 위의 구문은 브라우저에서 보이는 크기를 고정해주는 뜻의 구문이다.
+    이름을 viewport로 지정해준뒤 viewport의 내용을 content로 1로 고정해준다는내요을 추가햇다. -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- link 태그는 말그대로 별도의 파일을 호출해오는 방식이다. 거의 css 파일을 이런식으로 불러온다. 
+    href의 속성값은 위치를 지정해준다. rel 속성은 관계를 뜻하며, 해당 문서와의 관계를 정의한다. -->
     <title>paintjs</title>
-
+        <!-- title 태그는 탭에 나타나는 제목을 지정하는 태그이다. -->
 </head>
 
 <body>
+    <!-- body태그는 몸태그로 웹에 나오는 대부분의 정보를 여기에 담는다고 볼수있다. -->
     <canvas id="jsCanvas" class="canvas"></canvas>
+    <!-- 캔버스는 그래픽 캔버스 요소로 자바스크립트를 통해 다양한 그림을 그릴수 있는 공가능ㄹ 제공해준다 .
+    id 를 jsCanvas로 지정해주고 class는 canvas로 지정해주었다. 
+    여기서 id속성은 고유한 식별을 목적으로 사용합니다. class는 재사용을 목적으로 하는경우 사용하는것입니다.
+    즉id 는 하나의 앱에서 고유영역 식별자로 클래스는 css같은것을 지정할떄 재사용하게 되는 이름입니다. -->
     <div class="controls">
+        <!-- div 태그는 웹사이트의 레이아웃을 만들때 사용합니다 . 대부분 class 속성과 같이 사용합니다.  -->
         <div class="controls__range">
+            <!-- div 로 웹사이트의 레이아웃을 만들고 클래스 이름을 range로 유저가 지어주었습니다. -->
             <input type="range" id="jsRange" min="0.1" max="5" value="2.5" step="0.1" />
+            <!-- input태그는 사용자로부터 정보를 받아들이는 용도로 사용됩니다 . 뒤에 딸려오는 속성의 각각의 뜻은
+            type : 입력 태그의 유형 , id:이름 , min은 최소 ,max는 최대 , value는 입력태그의 초기값을말합니다.  -->
         </div>
         <div class="controls__btns">
             <button id="jsMode">Fill</button>
+            <!-- button 태그는 클릭할수 있는버튼을 정의할떄 사용합니다.  -->
             <button id="jsSave">Save</button>
         </div>
         <div class="controls__colors" id="jsColors">
+
             <div class="controls__color jsColor" style="background-color:#2c2c2c"></div>
+            <!-- div태그의 속성중 style은 div 태그의 스타일을 지정해주는것으로 다른 속성들도 같이 씁니다. 
+            background-color는 배경색상을 지정해주는 속성입니다.  -->
             <div class="controls__color jsColor" style="background-color:white"></div>
             <div class="controls__color jsColor" style="background-color:#FF3B30"></div>
             <div class="controls__color jsColor" style="background-color:#FF9500"></div>
@@ -33,6 +59,8 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <!-- 스크립트 태그를 사용해서 자바스크립트 코드를 문서내에 사입하는것이다. 
+    하지만 이번프로젝트에서는 src를 통해 app.js에 있는 자바스크립트 내용을 html안으로 불러왓다고 할수있다. -->
 </body>
 
 </html>
