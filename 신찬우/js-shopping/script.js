@@ -23,6 +23,7 @@ function createHTMLString(item) {
   `;
 }
 
+// Handle button click
 function onButtonClick(event, items) {
   const dataset = event.target.dataset
   const key = dataset.key;
@@ -31,15 +32,26 @@ function onButtonClick(event, items) {
   if (key == null || value == null) {
     return;
   }
-
-  displayItems(items.filter(item => item[key] === value));
+  displayItems(items.filter(item => item[key] === value)); // 메모리 비효율적 관리 발생
+  // updateItems(items, key, value);
 }
+
+// // Make the items matching {key: value} invisible
+// function updateItems(items, key, value) {
+//   items.forEach(item => {
+//     if (item.dataset[key] === value) {
+//       item.classList.remove('invisible');
+//     } else {
+//       item.classList.add('invisible');
+//     }
+//   })
+// }
+
 function setEventListeners(items) {
   const logo = document.querySelector(".logo");
   const buttons = document.querySelector(".buttons");
   logo.addEventListener("click", () => displayItems(items));
   buttons.addEventListener("click", event => onButtonClick(event, items));
-  items.forEach()
 }
 
 // main
