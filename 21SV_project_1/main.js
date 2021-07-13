@@ -1,5 +1,5 @@
 let target = document.querySelector("#dynamic");
-let stringArr =["s-v 여름프로젝트"];
+let stringArr =["21SV 여름프로젝트"];
 function typer_String(){
     let selectString = stringArr[0];
     let selectStringArr = selectString.split("");

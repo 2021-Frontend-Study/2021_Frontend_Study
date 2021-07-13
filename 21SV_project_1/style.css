@@ -1,11 +1,17 @@
 body{
-  background-color: aquamarine;
+background-image: url(./image/bg.png);  
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-
+.Intro{
+  text-align: center;
+}
 #dynamic{
   position:relative;
   display: inline-block;
+  font-size: 100px;
+  
 }
 #dynamic:after{ 
  
@@ -24,3 +30,22 @@ body{
  #dynamic.active::after{
   display:none; 
  }
+
+
+
+ .Footer{
+  
+  align-items: center;
+  height: 10px;
+  margin: auto;
+  text-align: center;
+  
+ 
+ }
+
+ .Footer img{
+   width: 100px;
+   height: 50px;
+ }
+
+
