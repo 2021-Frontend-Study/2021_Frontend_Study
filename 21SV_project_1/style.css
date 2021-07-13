@@ -4,7 +4,10 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
+
+/* 상단 메뉴 */
 .Top_Menu {
+  background-color: orange;
   margin: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -31,6 +34,10 @@ background-size: cover;
   cursor: pointer;
 }
 
+/* 본문 */
+.container{
+  background-color: bisque;
+}
 .Intro{
   text-align: center;
 }
@@ -58,31 +65,27 @@ background-size: cover;
   display:none; 
  }
 
-.Sec_1{
-margin-top: 200px;
-height: 800px;
-
-
-}
-
-
-.Sec_2{
-height: 600px;
-}
- .Footer{
-  
-  align-items: center;
-  height: 10px;
+/* 푸터 */
+footer{
+  background-color: yellow;
+  position: absolute;
   width: 100%;
-  margin: auto;
+  bottom: 0;
+  
+}
+ .ff{
   text-align: center;
   
- 
- }
+}
 
- .Footer img{
-   width: 100px;
-   height: 50px;
- }
+.logo img{
+  width: 200px;
+  height: 50px;
+}
 
+
+.link img{
+  width: 100px;
+  height: 50px;
+}
 
