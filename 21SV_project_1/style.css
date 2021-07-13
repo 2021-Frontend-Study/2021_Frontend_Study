@@ -2,7 +2,7 @@ body{
   background-color: aquamarine;
 }
 
-/* 
+
 #dynamic{
   position:relative;
   display: inline-block;
@@ -23,4 +23,4 @@ body{
 } 
  #dynamic.active::after{
   display:none; 
- } */
+ }
