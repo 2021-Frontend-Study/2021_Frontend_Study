@@ -58,12 +58,22 @@ background-size: cover;
   display:none; 
  }
 
+.Sec_1{
+margin-top: 200px;
+height: 800px;
 
 
+}
+
+
+.Sec_2{
+height: 600px;
+}
  .Footer{
   
   align-items: center;
   height: 10px;
+  width: 100%;
   margin: auto;
   text-align: center;
   
