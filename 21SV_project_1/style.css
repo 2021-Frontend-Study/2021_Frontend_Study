@@ -1,17 +1,16 @@
 html,
-body{ 
-  margin:0;
-  padding:0; 
-  width:100%; 
-  height:100% 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-body{
-background-image: url(./image/bg.png);  
-background-repeat: no-repeat;
-background-size: cover;
+body {
+  background-image: url(./image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* 상단 메뉴 */
 .Top_Menu {
@@ -28,7 +27,7 @@ background-size: cover;
   padding-top: 5px;
 }
 
-.Top__sections .sectionList{
+.Top__sections .sectionList {
   display: flex;
   justify-content: flex-start;
   list-style: none;
@@ -43,106 +42,103 @@ background-size: cover;
 }
 
 /* 본문 */
-.container{
+.container {
   /* background-color: bisque; */
-  display: flex; 
-    min-height: 100vh; 
-    flex-direction: column; 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
 }
-.main-content{ 
-  flex: 1; 
-} 
-.Intro{
+.main-content {
+  flex: 1;
+}
+.Intro {
   text-align: center;
 }
-.main_text{
-  font-size:4vh;
+.main_text {
+  font-size: 4vh;
   font-weight: bold;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
-.sub_text{
-  font-size:5vh;
+.sub_text {
+  font-size: 5vh;
 }
-#dynamic{
-  position:relative;
+#dynamic {
+  position: relative;
   display: inline-block;
   font-size: 100px;
-  
 }
-#dynamic:after{ 
-
-  content:""; 
-  display:block; 
-  position:absolute; 
-  top:0; 
-  right: -10px; 
-  width:4px; 
-  height:100%; 
-  background-color: white; 
-} 
-#dynamic.active::after{
-  display:none; 
-  }
+#dynamic:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+#dynamic.active::after {
+  display: none;
+}
 
 /* 세션2 */
-li, ol, ul {
+li,
+ol,
+ul {
   list-style: none;
 }
-.Sec_2{
-margin:40px;
+.Sec_2 {
+  margin: 40px;
 }
-.chat{
-display : flex;
-margin : 32px 0;
+.chat {
+  display: flex;
+  margin: 32px 0;
 }
-.avatar_image{
-width:150px;
-height:150px;
-margin : 15px;
-border-radius: 50%;
+.avatar_image {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 50%;
 }
-.basic_chatting{
-padding : 18px;
-background-color: white;
-border-radius:40px;
+.basic_chatting {
+  padding: 18px;
+  background-color: white;
+  border-radius: 40px;
 }
-.chat_project{
-width: 100%;
-height: auto;
-max-width: 550px;
-padding: 24px 32px;
-border-radius: 40px;
+.chat_project {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  padding: 24px 32px;
+  border-radius: 40px;
 }
 
 /* 푸터 */
-footer{
+footer {
   /* background-color: yellow; */
-  height:60px;
+  height: 60px;
   width: 100%;
   bottom: 0;
-  
 }
-.ff{
+.ff {
   text-align: center;
-  
 }
 
-.logo img{
+.logo img {
   width: 200px;
   height: 50px;
 }
 
-
-.logo img:hover{
+.logo img:hover {
   transform: scale(1.1);
 }
 
-
-.link a:hover{
-  color:aquamarine;
+.link a:hover {
+  color: aquamarine;
 }
-
-
 
 .Skill_image_container {
   text-align: center;
@@ -156,8 +152,7 @@ footer{
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 
-.project_container{
-
+.project_container {
   display: flex;
   margin-top: 88px;
   padding: 0px 5%;
