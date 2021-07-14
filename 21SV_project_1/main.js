@@ -34,23 +34,23 @@ section1.addEventListener("click", () => window.scrollTo({ top: Sec_1.offsetTop,
 section2.addEventListener("click", () => window.scrollTo({ top: Sec_2.offsetTop, behavior: 'smooth' }));
 
 // 7/14 11:27 신찬우 수정
-// function upnav() {
-//     document.addEventListener('scroll', onScroll, { passive: true });
-//     let last = 0;
-//     const gap = 1; 
-//     const Top_Menu = document.querySelector(".Top_Menu"); 
-//     const containerheight = document.querySelector(".container").clientHeight;
+function upnav() {
+    document.addEventListener('scroll', onScroll, { passive: true });
+    let last = 0;
+    const gap = 1; 
+    const Top_Menu = document.querySelector(".Top_Menu"); 
+    const containerheight = document.querySelector(".container").clientHeight;
 
-//     function onScroll() {
-//         const scrollposition = pageYOffset;
-//         console.log(`라스트: ${last}, 스크롤포지션: ${scrollposition}, 컨테이너 높이: ${containerheight}`);
-//         if (Math.abs(last - scrollposition) <= gap) return;
-//         else if (scrollposition > last) {
-//             Top_Menu.classList.remove("downdown");
-//         } else if (scrollposition < last) {
-//             Top_Menu.classList.add("downdown");
-//         }
-//         last = scrollposition;
-//     }
-// }
-// upnav();
+    function onScroll() {
+        const scrollposition = pageYOffset;
+        // console.log(`라스트: ${last}, 스크롤포지션: ${scrollposition}, 컨테이너 높이: ${containerheight}`);
+         if (Math.abs(last - scrollposition) <= gap) return;
+        else if (scrollposition > last) {
+            Top_Menu.classList.remove("downdown");
+        } else if (scrollposition < last) {
+            Top_Menu.classList.add("downdown");
+        }
+        last = scrollposition;
+    }
+}
+upnav();
