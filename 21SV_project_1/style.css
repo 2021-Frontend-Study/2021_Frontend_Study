@@ -1,3 +1,9 @@
+/* 7/14 11:27 신찬우 수정 */
+/* :root {
+  --top-margin: 80px;
+  --top-color: rgb(222, 228, 250);
+} */
+
 html,
 body {
   margin: 0;
@@ -15,12 +21,32 @@ body {
 /* 상단 메뉴 */
 .Top_Menu {
   /* background-color: orange; */
-  margin: 20px;
-  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* 7/14 11:27 신찬우 수정 */
+  /* top:0;
+  left:0;
+  position:absolute;
+  width: 100%;
+  height: var(--top-margin);
+  background-color: var(--top-color); */
 }
+
+/* .downdown {
+  position:fixed;
+  animation: down 0.3s ease;
+}
+
+@keyframes down {
+  0%{
+    transform: translateY(-50px)
+  }
+  100%{
+    transform: translateY(0px)
+  }  
+} */
 
 .Top__logo img {
   width: 150px;
@@ -49,7 +75,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-
+  margin-top: var(--top-margin); /* 7/14 11:27 신찬우 수정 */
 }
 .main-content {
   flex: 1;
@@ -72,7 +98,7 @@ body {
   font-size: 5vh;
 }
 #dynamic {
-  position: relative;
+  /* position: relative; */ /*7/14 11:27 신찬우 수정*/
   display: inline-block;
   font-size: 100px;
 }
