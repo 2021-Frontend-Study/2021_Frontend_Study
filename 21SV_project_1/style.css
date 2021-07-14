@@ -56,6 +56,12 @@ body {
 }
 .Intro {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  width: 100%;
 }
 .main_text {
   font-size: 4vh;
