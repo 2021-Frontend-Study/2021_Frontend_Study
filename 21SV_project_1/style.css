@@ -133,3 +133,32 @@ footer{
 }
 
 
+.logo img:hover{
+  transform: scale(1.1);
+}
+
+
+.link a:hover{
+  color:aquamarine;
+}
+
+
+
+.Skill_image_container {
+  text-align: center;
+  display: inline-block;
+  width: 114px;
+  height: 116px;
+  border-radius: 30px 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 2rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.project_container{
+
+  display: flex;
+  margin-top: 88px;
+  padding: 0px 5%;
+}
