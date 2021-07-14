@@ -1,71 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="./style.css"/>
 
-        <title>21SV_Project</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <title>21SV_Project</title>
+</head>
 
-    <body>
-        <div class="Top_Menu">
-            <div class="Top__logo">
-                <a href="index.html">
-                    <img src="./image/검정색로고.png" alt="검정로고"/></a>
+<body>
+    <nav class="Top_Menu">
+        <div class="Top__logo">
+            <a href="index.html">
+                <img src="./image/검정색로고.png" alt="검정로고" /></a>
+        </div>
+        <div class="Top__sections">
+            <ul class="sectionList">
+                <li class="secIntro">Intro</li>
+                <li class="section1">Section1</li>
+                <li class="section2">Section2</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-contact">
+            <!-- 인트로 -->
+            <section id="Intro">
+                <div class="Intro">
+                    <!-- 애니메이션 활용 -->
+                    <div class="typer" id="ftyper">
+                        <div id="dynamic" class="main_text"></div>
+                        <div class="sub_text">프로젝트 간단소개</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 활동내용 세션 -->
+            <section id="sec_1">
+                <div class="Sec_1">
+                    <h1>우리의 활동 내역</h1>
+                    <div class="commit"></div>
+                    <div class="clonecodig"></div>
+                    <div class="language"></div>
+                </div>
+            </section>
+
+            <!-- 개별 프로젝트 세션 -->
+            <section id="sec_2">
+                <div class="Sec_2">
+                    <div class="Sec2_header">
+                        <h2 class="sec2title">
+                            각자의 프로젝트 샬라샬라
+                        </h2>
+                        <p class="Sec2_sub">
+                        <h3 class="sec3sub">
+                            개인의 프로젝트 어쩌고 저쩌고
+                        </h3>
+                        </p>
+                        <ul>
+                            <li class="style_label">신찬우</li>
+                            <li class="style_label">이세준</li>
+                            <li class="style_label">최혜린</li>
+                        </ul>
+                    </div>
+                    <div class="Sec_2" id="chatting">
+                        <div class="chat">
+                            <img src="image/image_people.jpeg" alt="people" class="avatar_image" />
+                            <div class="basic_chatting">
+                                <p>너희들의 개인 프로젝트를 보여줄래? </p>
+                            </div>
+                        </div>
+
+                        <div class="chat">
+                            <div class="basic_chatting">
+                                <p>나의 개인 프로젝트는 이거야!</p>
+                                <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
+                                    <img src="image/choi_project.png" alt="choi_projectimage" class="chat_project" />
+                                </a>
+                                <p>혜린/인덕대학교</p>
+                            </div>
+                            <img src="image/image_people.jpeg" alt="people" class="avatar_image" />
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="ff">
+            <div class="logo">
+                <img src="./image/검정색로고.png" alt="검정로고" />
             </div>
-            <div class="Top__sections">
-                <ul class="sectionList">
-                    <li class="secIntro">Intro</li>
-                    <li class="section1">Section1</li>
-                    <li class="section2">Section2</li>
-                </ul>
+            <div class="link">
+                <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
+                    <i class="fab fa-github fa-3x" alt="git"></i></a>
+                <a
+                    href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7">
+                    <i class="fab fa-blogger fa-3x" alt="naver_blog"></i></a>
+            </div>
+            <div class="text">
+                <b>2021 하계 방학 프로젝트</b>
+                <br />
             </div>
         </div>
-        <div class="container">
-            <div class="Intro">
-                <!-- 애니메이션 활용 -->
-                <div class="typer" id="ftyper">
-                    <div id="dynamic" class="main_text"></div>
-                    <div class="sub_text">프로젝트 간단소개</div>
-                </div>
-            </div>
 
-            <div class="Sec_1">
-                <h1>우리의 활동 내역</h1>
-                <div class="commit"></div>
-                <div class="clonecodig"></div>
-                <div class="language"></div>
-            </div>
+    </footer>
 
-            <div class="Sec_2">
-                <ul>
-                    <li>신찬우</li>
-                    <li>이세준</li>
-                    <li>최혜린</li>
-                </ul>
-            </div>
-        </div>
-        <footer>
-            <div class="ff">
-                <div class="logo">
-                    <img src="./image/검정색로고.png" alt="검정로고"/>
-                </div>
+    <script src="main.js"></script>
+</body>
 
-                <div class="link">
-                    <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
-                        <img src="./image/git.png" alt="git"/></a>
-                    <a
-                        href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7">
-                        <img src="./image/naver.png" alt="naver_blog"/></a>
-                </div>
-                <div class="text">
-                    <b>2021 하계 방학 프로젝트</b>
-                    <br/>
-                </div>
-            </div>
-        </footer>
-
-        <script src="main.js"></script>
-    </body>
 </html>

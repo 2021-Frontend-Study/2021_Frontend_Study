@@ -1,3 +1,11 @@
+html,
+body{ 
+  margin:0;
+  padding:0; 
+  width:100%; 
+  height:100% 
+}
+
 body{
 background-image: url(./image/bg.png);  
 background-repeat: no-repeat;
@@ -7,7 +15,7 @@ background-size: cover;
 
 /* 상단 메뉴 */
 .Top_Menu {
-  background-color: orange;
+  /* background-color: orange; */
   margin: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -36,10 +44,24 @@ background-size: cover;
 
 /* 본문 */
 .container{
-  background-color: bisque;
+  /* background-color: bisque; */
+  display: flex; 
+    min-height: 100vh; 
+    flex-direction: column; 
 }
+.main-content{ 
+  flex: 1; 
+} 
 .Intro{
   text-align: center;
+}
+.main_text{
+  font-size:4vh;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+.sub_text{
+  font-size:5vh;
 }
 #dynamic{
   position:relative;
@@ -48,32 +70,59 @@ background-size: cover;
   
 }
 #dynamic:after{ 
- 
-   content:""; 
-   display:block; 
-   position:absolute; 
-   top:0; 
-   right: -10px; 
 
+  content:""; 
+  display:block; 
+  position:absolute; 
+  top:0; 
+  right: -10px; 
   width:4px; 
-
   height:100%; 
-
   background-color: white; 
 } 
- #dynamic.active::after{
+#dynamic.active::after{
   display:none; 
- }
+  }
+
+/* 세션2 */
+li, ol, ul {
+  list-style: none;
+}
+.Sec_2{
+margin:40px;
+}
+.chat{
+display : flex;
+margin : 32px 0;
+}
+.avatar_image{
+width:150px;
+height:150px;
+margin : 15px;
+border-radius: 50%;
+}
+.basic_chatting{
+padding : 18px;
+background-color: white;
+border-radius:40px;
+}
+.chat_project{
+width: 100%;
+height: auto;
+max-width: 550px;
+padding: 24px 32px;
+border-radius: 40px;
+}
 
 /* 푸터 */
 footer{
-  background-color: yellow;
-  position: absolute;
+  /* background-color: yellow; */
+  height:60px;
   width: 100%;
   bottom: 0;
   
 }
- .ff{
+.ff{
   text-align: center;
   
 }
@@ -83,9 +132,4 @@ footer{
   height: 50px;
 }
 
-
-.link img{
-  width: 100px;
-  height: 50px;
-}
 
