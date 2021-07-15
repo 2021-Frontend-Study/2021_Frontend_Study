@@ -92,6 +92,7 @@ body {
 }
 #dynamic {
     /*7/14 11:27 신찬우 수정*/
+    position:relative;
     display: inline-block;
     font-size: 100px;
 }
