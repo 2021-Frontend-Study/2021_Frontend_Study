@@ -1,89 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-    <title>21SV_Project</title>
-</head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <title>21SV_Project</title>
+    </head>
 
-<body>
-    <nav class="Top_Menu">
-        <div class="Top__logo">
-            <a href="index.html">
-                <img src="./image/검정색로고.png" alt="검정로고" /></a>
-        </div>
-        <div class="Top__sections">
-            <ul class="sectionList">
-                <li class="secIntro">Intro</li>
-                <li class="section1">Section1</li>
-                <li class="section2">Section2</li>
-            </ul>
-        </div>
-    </nav>
+    <body>
+        <nav class="Top_Menu">
+            <div class="Top__logo">
+                <a href="index.html">
+                    <img src="./image/검정색로고.png" alt="검정로고"/></a>
+            </div>
+            <div class="Top__sections">
+                <ul class="sectionList">
+                    <li class="secIntro">Intro</li>
+                    <li class="section1">Section1</li>
+                    <li class="section2">Section2</li>
+                </ul>
+            </div>
+        </nav>
 
-
-    <div class="container">
-        <div class="main-contact">
-            <!-- 인트로 -->
-            <section id="Intro">
-                <div class="Intro">
-                    <!-- 애니메이션 활용 -->
-                    <div class="typer" id="ftyper">
-                        <div id="dynamic" class="main_text"></div>
-                        <div class="sub_text">프로젝트 간단소개</div>
+        <div class="container">
+            <div class="main-contact">
+                <!-- 인트로 -->
+                <section id="Intro">
+                    <div class="Intro">
+                        <!-- 애니메이션 활용 -->
+                        <div class="typer" id="ftyper">
+                            <div id="dynamic" class="main_text"></div>
+                            <div class="sub_text">프로젝트 간단소개(나중에 내용 추가)</div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- 활동내용 세션 -->
-            <section id="sec_1">
-                <div class="Sec_1">
-                    <center>
+                <!-- 활동내용 세션 -->
+                <section class="sec_1">
+                    <div class="sec1_text">
                         <h1>우리의 활동 내역</h1>
-                        <div class="Skill_content">
-                            <div class="Skill_image_container">
-                                <i class="fab fa-html5 fa-7x"></i>
-                            </div>
-                            <div class="Skill_image_container">
-                                <i class="fab fa-css3-alt fa-7x"></i>
-                            </div>
-                            <div class="Skill_image_container">
-                                <i class="fab fa-js fa-7x"></i>
-                            </div>
-                        </div>
-                    </center>
-                    <article class="project_container">
-                        <div class="project_container" id="commit">
-                            <h2 class="project_name">commit</h2>
-                            <div class="project_image">
-                                <img src="image/chanu_commit.png" alt="commit" width="300px" height="200px">
-                            </div>
-                        </div>
-                        <div class="project_container" id="clonecoding">
-                            <h2 class="project_name">clonecoding</h2>
-                            <div class="project_image">
-                                <img src="image/elie_clone_coding.png" alt="colone" width="300px" height="200px">
-                            </div>
-                        </div>
-                        <div class="project_container" id="language"></div>
-                    </article>
-                </div>
-            </section>
+                        <h2>개별 학습과 팀활동</h2>
+                    </div>
 
-            <!-- 개별 프로젝트 세션 -->
-            <section id="sec_2">
-                <div class="Sec_2">
-                    <div class="Sec2_header">
+                    <p>commit</p>
+
+                    <div class="github_image">
+                        <figure>
+                            <img src="image/chanu_commit.png" alt="commit_chanu" style="margin-right: 20px;">
+                            <figcaption>신찬우</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./image/sejun_commit.png" alt="commit_sejun" style="margin-right: 20px;">
+                            <figcaption>이세준</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./image/hyerin_commit.png" alt="commit_hyerin">
+                            <figcaption>최혜린</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <p>clonecoding</p>
+
+                    <div class="clonecoding" id="clonecoding">
+
+                        <div class="namad">
+                            <div class="FP"><img src="./image/nomadCoders.PNG" alt="nomad"></div>
+                            <div class="clone_result">
+                                <img src="./image/nomad.gif" alt="paingjs" loop =infinite>
+                            </div>
+
+                        </div>
+
+                        <div class="elie">
+                            <div class="FP">
+                                <img src="./image/dreamcoding_elie.png" alt="elie"></div>
+                            <div class="clone_result">
+                                <img src="./image/shopping.gif" alt="shopping" loop = infinite>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>language</p>
+                    <div class="Skill_content">
+                        <div class="Skill_image_container">
+                            <i class="fab fa-html5 fa-7x"></i>
+                        </div>
+                        <div class="Skill_image_container">
+                            <i class="fab fa-css3-alt fa-7x"></i>
+                        </div>
+                        <div class="Skill_image_container">
+                            <i class="fab fa-js fa-7x"></i>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- 개별 프로젝트 세션 -->
+                <section class="sec_2">
+                    <div class="sec2_header">
                         <h2 class="sec2title">
                             각자의 프로젝트 샬라샬라
                         </h2>
                         <p class="Sec2_sub">
-                        <h3 class="sec3sub">
-                            개인의 프로젝트 어쩌고 저쩌고
-                        </h3>
+                            <h3 class="sec3sub">
+                                개인의 프로젝트 어쩌고 저쩌고
+                            </h3>
                         </p>
                         <ul>
                             <li class="style_label">신찬우</li>
@@ -91,57 +117,53 @@
                             <li class="style_label">최혜린</li>
                         </ul>
                     </div>
-                    <div class="Sec_2" id="chatting">
+
+                    <div class="sec2_chat" id="chatting">
                         <div class="chat">
-                            <img src="image/image_people.jpeg" alt="people" class="avatar_image" />
+                            <img src="image/image_people.jpeg" alt="people" class="avatar_image"/>
                             <div class="basic_chatting">
-                                <p>너희들의 개인 프로젝트를 보여줄래? </p>
+                                <p>너희들의 개인 프로젝트를 보여줄래?
+                                </p>
                             </div>
                         </div>
-
                         <div class="chat">
                             <div class="basic_chatting">
                                 <p>나의 개인 프로젝트는 이거야!</p>
                                 <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
-                                    <img src="image/choi_project.png" alt="choi_projectimage" class="chat_project" />
+                                    <img src="image/choi_project.png" alt="choi_projectimage" class="chat_project"/>
                                 </a>
                                 <p>혜린/인덕대학교</p>
                             </div>
-                            <img src="image/image_people.jpeg" alt="people" class="avatar_image" />
+
                         </div>
                     </div>
+
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="ff">
+                <div class="logo">
+                    <img src="./image/검정색로고.png" alt="검정로고"/>
                 </div>
-            </section>
-        </div> 
-    </div>
+                <div class="link">
+                    <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
+                        <i class="fab fa-github fa-3x" alt="git"></i>
+                    </a>
+                    <a
+                        href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7">
+                        <i class="fab fa-blogger fa-3x" alt="naver_blog"></i>
+                    </a>
+                </div>
+                <div class="text">
+                    <b>2021 하계 방학 프로젝트</b>
+                    <br/>
+                </div>
+            </div>
+        </footer>
 
-
-   <footer class="footer">
-    <div class="ff">
-        <div class="logo">
-            <img src="./image/검정색로고.png" alt="검정로고"/>
-        </div>
-        <div class="link">
-            <a href="https://github.com/2021-Frontend-Study/2021_Frontend_Study">
-                <i class="fab fa-github fa-3x" alt="git"></i>
-            </a>
-            <a
-                href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7">
-                <i class="fab fa-blogger fa-3x" alt="naver_blog"></i>
-            </a>
-        </div>
-        <div class="text">
-            <b>2021 하계 방학 프로젝트</b>
-            <br/>
-        </div>
-    </div>
-    </footer>
-
-
-    
-  
-    
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 
 </html>

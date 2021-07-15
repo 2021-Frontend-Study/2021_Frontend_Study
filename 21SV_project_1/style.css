@@ -1,188 +1,263 @@
 /* 7/14 11:27 신찬우 수정 */
 :root {
-  --top-margin: 80px;
-  --top-color: rgb(222, 228, 250);
+    --top-margin: 80px;
+    --top-color: rgb(222, 228, 250);
 }
 
-
-
 body {
- 
-  background-image: url(./image/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+    margin: auto;
+    width: 100%;
+    background-image: url("./image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* 상단 메뉴 */
 .Top_Menu {
-  /* background-color: orange; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  /* 7/14 11:27 신찬우 수정 */
-  top:0;
-  left:0;
-  position:absolute;
-  width: 100%;
-  height: var(--top-margin);
-  background-color: var(--top-color);
+    /* 7/14 11:27 신찬우 수정 */
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: var(--top-margin);
+    background-color: var(--top-color);
 }
 
 .downdown {
-  position:fixed;
-  animation: down 0.3s ease;
+    position: fixed;
+    animation: down 0.3s ease;
 }
 
 @keyframes down {
-  0%{
-    transform: translateY(-50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }  
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .Top__logo img {
-  width: 150px;
-  padding-top: 5px;
+    width: 150px;
+    padding-top: 5px;
 }
 
 .Top__sections .sectionList {
-  display: flex;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
 }
 
 .Top__sections li {
-  padding-right: 20px;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* 본문 */
 .container {
-  /* background-color: bisque; */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-top: var(--top-margin); /* 7/14 11:27 신찬우 수정 */
-}
-.main-content {
-  flex: 1;
-}
-.Intro {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #fff;
-  width: 100%;
-}
-.main_text {
-  font-size: 4vh;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.sub_text {
-  font-size: 5vh;
-}
-#dynamic {
-  /*7/14 11:27 신찬우 수정*/
-  display: inline-block;
-  font-size: 100px;
-}
-#dynamic:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -10px;
-  width: 4px;
-  height: 100%;
-  background-color: white;
-}
-#dynamic.active::after {
-  display: none;
-}
-.project_container {
-  display: flex;
-  margin-top: 88px;
-  padding: 0px 5%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: var(--top-margin);
+    /*7/14 11:27 신찬우 수정 */
 }
 
+/*intro*/
+.Intro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+    width: 100%;
+}
+.main_text {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sub_text {
+    font-size: 5vh;
+}
+#dynamic {
+    /*7/14 11:27 신찬우 수정*/
+    display: inline-block;
+    font-size: 100px;
+}
+#dynamic:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+#dynamic.active::after {
+    display: none;
+}
+
+/*sec 1*/
+.sec_1 {
+    margin-bottom: 100px;
+}
+.sec1_text h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 80px;
+}
+.sec1_text h2 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.github_image {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.github_image img {
+
+    border-radius: 8%;
+    width: 500px;
+    height: 300px;
+}
+
+figcaption {
+    border-radius: 8%;
+    color: #fff;
+
+    padding: 1em;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+figure {
+    position: relative;
+    margin: 0;
+    line-height: 0;
+}
+
+.github_image {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*폰트 변경 가능*/
+.sec_1 p {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.clonecoding {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.namad {
+    margin-right: 200px;
+}
+.clone_result img {
+    width: 500px;
+    height: 500px;
+
+}
+
+.FP img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+/*언어 이미지*/
+.Skill_image_container {
+    text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 116px;
+    border-radius: 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
 
 /* 세션2 */
 li,
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
-.Sec_2 {
-  margin: 40px;
-}
+
+.sec_2 {
+    }
+
+.sec2_header {
+    }
+
 .chat {
-  display: flex;
-  margin: 32px 0;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 10px;
+    /* margin: 32px 0; */
 }
 .avatar_image {
-  width: 150px;
-  height: 150px;
-  margin: 15px;
-  border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 50%;
 }
 .basic_chatting {
-  padding: 18px;
-  background-color: white;
-  border-radius: 40px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 40px;
 }
 .chat_project {
-  width: 100%;
-  height: auto;
-  max-width: 550px;
-  padding: 24px 32px;
-  border-radius: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    padding: 24px 32px;
+    border-radius: 40px;
 }
 
 /* 푸터 */
 footer {
-  /* background-color: yellow; */
-  height: 150px;
-  width: 100%;
-  bottom: 0;
+    /* background-color: yellow; */
+    height: 150px;
+    width: 100%;
+    bottom: 0;
 }
 .ff {
-  text-align: center;
-  
+    text-align: center;
 }
 
 .logo img {
-  width: 200px;
-  height: 50px;
+    width: 200px;
+    height: 50px;
 }
 
 .logo img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .link a:hover {
-  color: aquamarine;
+    color: aquamarine;
 }
-
-.Skill_image_container {
-  text-align: center;
-  display: inline-block;
-  width: 114px;
-  height: 116px;
-  border-radius: 30px 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 2rem;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-
