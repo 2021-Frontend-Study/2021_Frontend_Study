@@ -41,7 +41,7 @@ function upnav() {
     let last = 0;
     const gap = 1;
     const Top_Menu = document.querySelector(".Top_Menu");
-    const containerheight = document.querySelector(".container").clientHeight;
+
 
     function onScroll() {
         const scrollposition = pageYOffset;

@@ -199,6 +199,23 @@ figure {
     margin-bottom: 100px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
+.html_icon:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 1.25s;
+}
+
+.css_icon:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 1.25s;
+}
+
+.js_icon:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 1.25s;
+}
 
 /* 세션2 */
 li,ul {
@@ -207,6 +224,7 @@ li,ul {
 
 .Sec_2 {
     margin: 0 5%;
+    margin-bottom: 200px;
     padding: 0 10%;
 }
 
