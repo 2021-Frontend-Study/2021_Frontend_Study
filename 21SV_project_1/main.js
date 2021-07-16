@@ -34,7 +34,7 @@ const Sec_2 = document.querySelector(".sec_2");
 
 secIntro.addEventListener("click", () => window.scrollTo({ top: intro.offsetTop, behavior: 'smooth' }));
 section1.addEventListener("click", () => window.scrollTo({ top: Sec_1.offsetTop-150, behavior: 'smooth' }));
-section2.addEventListener("click", () => window.scrollTo({ top: Sec_2.offsetTop, behavior: 'smooth' }));
+section2.addEventListener("click", () => window.scrollTo({ top: Sec_2.offsetTop-30, behavior: 'smooth' }));
 
 function upnav() {
     document.addEventListener('scroll', onScroll, { passive: true });
