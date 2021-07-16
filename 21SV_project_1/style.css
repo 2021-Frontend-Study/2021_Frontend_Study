@@ -1,7 +1,7 @@
-/* 7/14 11:27 신찬우 수정 */
 :root {
     --top-margin: 80px;
     --top-color: rgb(222, 228, 250);
+    --chat-height: 50px;
 }
 
 body {
@@ -10,6 +10,8 @@ body {
     background-image: url("./image/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x:hidden; 
+    overflow-y:auto;
 }
 
 /* 상단 메뉴 */
@@ -18,8 +20,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* 7/14 11:27 신찬우 수정 */
     top: 0;
     left: 0;
     position: absolute;
@@ -69,7 +69,6 @@ body {
     text-align: center;
     align-items: center;
     margin-top: var(--top-margin);
-    /*7/14 11:27 신찬우 수정 */
 }
 
 /*intro*/
@@ -113,6 +112,7 @@ body {
 /*sec 1*/
 .sec_1 {
     margin-bottom: 100px;
+    
 }
 .sec1_text h1 {
     margin-top: 0;
@@ -125,17 +125,18 @@ body {
 }
 
 .github_image {
-
     display: flex;
     flex-direction: row;
+    margin-bottom: 10%;
 }
 
 .github_image img {
-
     border-radius: 8%;
-    width: 500px;
-    height: 300px;
+    width: 99%;
+    height: 99%;
 }
+
+
 
 figcaption {
     border-radius: 8%;
@@ -154,17 +155,13 @@ figure {
     line-height: 0;
 }
 
-.github_image {
-    display: flex;
-    flex-direction: row;
 
-}
 
 /*폰트 변경 가능*/
-.sec_1 p {
+.sec_1 h3 {
     margin-top: 80px;
     margin-bottom: 30px;
-    text-align: start;
+    text-align: center; 
 }
 
 .clonecoding {
@@ -172,20 +169,21 @@ figure {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    margin-bottom: 10%;
 }
 .namad {
     margin-right: 200px;
 }
 .clone_result img {
     width: 500px;
-    height: 500px;
+    height: 480px;
 
 }
 
 .FP img {
     border-radius: 100%;
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
 }
 
 /*언어 이미지*/
@@ -198,6 +196,7 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 2rem;
+    margin-bottom: 200px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 
@@ -208,29 +207,61 @@ ul {
     list-style: none;
 }
 
-.sec_2 {
-    }
+.Sec_2 {
+    margin: 0 5%;
+    padding: 0 10%;
+}
 
-.sec2_header {
-    }
+.Sec_2 .sec2__nameList {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bolder;
+    background-color: aliceblue;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.Sec_2 .sec2__nameList li:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.hidden {
+    display: none;
+}
+
+.Sec_2 .project_list ul {
+    padding: 10px 20px;
+    background-color: rgb(228, 231, 188);
+}
 
 .chat {
     display: flex;
-    margin-left: 25%;
-    margin-top: 10px;
-    /* margin: 32px 0; */
+    margin: 32px 0;
+    height: auto;
 }
+
 .avatar_image {
-    width: 150px;
-    height: 150px;
-    margin: 15px;
+    margin: 5px;
     border-radius: 50%;
+    height: var(--chat-height);
 }
+
 .basic_chatting {
-    padding: 18px;
+    display: flex;
+    padding: 15px 18px;
     background-color: white;
     border-radius: 40px;
+    align-items: center;
+    max-width: 50%;
 }
+
+#reply {
+    justify-content: flex-end;
+    height: auto;
+}
+
 .chat_project {
     width: 100%;
     height: auto;
@@ -261,4 +292,5 @@ footer {
 
 .link a:hover {
     color: aquamarine;
+    
 }
