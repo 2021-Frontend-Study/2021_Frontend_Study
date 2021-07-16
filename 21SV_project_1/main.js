@@ -29,6 +29,9 @@ const section2 = document.querySelector(".section2");
 const intro = document.querySelector(".Intro");
 const Sec_1 = document.querySelector(".sec_1");
 const Sec_2 = document.querySelector(".sec_2");
+
+
+
 secIntro.addEventListener("click", () => window.scrollTo({ top: intro.offsetTop, behavior: 'smooth' }));
 section1.addEventListener("click", () => window.scrollTo({ top: Sec_1.offsetTop, behavior: 'smooth' }));
 section2.addEventListener("click", () => window.scrollTo({ top: Sec_2.offsetTop, behavior: 'smooth' }));

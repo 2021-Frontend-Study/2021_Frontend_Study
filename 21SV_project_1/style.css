@@ -201,9 +201,7 @@ figure {
 }
 
 /* 세션2 */
-li,
-ol,
-ul {
+li,ul {
     list-style: none;
 }
 
@@ -217,15 +215,22 @@ ul {
     justify-content: space-around;
     font-size: large;
     font-weight: bolder;
+    color : rgb( 33,15,127);
     background-color: aliceblue;
     padding: 20px 20px;
     border-radius: 15px;
 }
+.clicked{
+    color : rgb(180,128,204);
+}
 
 .Sec_2 .sec2__nameList li:hover {
     cursor: pointer;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    color : rgb(180,128,204);
 }
+
+
 
 .hidden {
     display: none;
