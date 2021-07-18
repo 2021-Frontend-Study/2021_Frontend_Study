@@ -16,7 +16,6 @@ body {
 
 /* 상단 메뉴 */
 .Top_Menu {
-    /* background-color: orange; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,10 +86,9 @@ body {
     margin-bottom: 5px;
 }
 .sub_text {
-    font-size: 5vh;
+    font-size: 21px;
 }
 #dynamic {
-    /*7/14 11:27 신찬우 수정*/
     position:relative;
     display: inline-block;
     font-size: 100px;
@@ -141,7 +139,6 @@ body {
 figcaption {
     border-radius: 8%;
     color: #fff;
-
     padding: 1em;
     line-height: 1;
     position: absolute;
@@ -171,7 +168,7 @@ figure {
     flex-direction: row;
     margin-bottom: 10%;
 }
-.namad {
+.nomad {
     margin-right: 200px;
 }
 .clone_result img {
@@ -247,8 +244,6 @@ li,ul {
     transform: scale(1.1);
     color : rgb(180,128,204);
 }
-
-
 
 .hidden {
     display: none;
