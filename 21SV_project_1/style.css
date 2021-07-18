@@ -295,7 +295,6 @@ li,ul {
 
 /* 푸터 */
 footer {
-    /* background-color: yellow; */
     height: 150px;
     width: 100%;
     bottom: 0;
@@ -319,7 +318,7 @@ footer {
 }
 
 
-/* 
+
 .flip-box:hover .flip {
     transform: rotateY(-180deg);
   }
@@ -357,4 +356,4 @@ footer {
   .Top__sections li:hover{
     color:yellow;
     text-decoration: underline;
-  } */
+  }
