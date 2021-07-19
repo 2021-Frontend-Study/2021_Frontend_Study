@@ -1,3 +1,6 @@
+'use strict';
+
+// project-click hidden
 const Shin = document.querySelector(".project_Shin");
 const Lee = document.querySelector(".project_Lee");
 const Choi = document.querySelector(".project_Choi");
@@ -29,23 +32,22 @@ Shin.addEventListener("click", clickName);
 Lee.addEventListener("click", clickName);
 Choi.addEventListener("click", clickName);
 
-var div2 = document.querySelectorAll(".sec2__nameList li");
+// nameList click color change & motion to list 
+const nameList = document.querySelectorAll(".sec2__nameList li");
 
 function handleClick(event) {
-  if (event.target.classList[1] === "clicked") {
-    event.target.classList.remove("clicked");
-  } else {
-    for (var i = 0; i < div2.length; i++) {
-      div2[i].classList.remove("clicked");
+  for (let i = 0; i < nameList.length; i++) {
+    if (event.target.classList[1] !== "clicked") {
+      event.target.classList.add("clicked");
     }
-
-    event.target.classList.add("clicked");
+    nameList[i].classList.remove("clicked");
   }
+  event.target.classList.add("clicked");
 }
 
 function init() {
-  for (var i = 0; i < div2.length; i++) {
-    div2[i].addEventListener("click", handleClick);
+  for (let i = 0; i < nameList.length; i++) {
+    nameList[i].addEventListener("click", handleClick);
   }
 }
 
