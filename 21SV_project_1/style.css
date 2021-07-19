@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: var(--top-color);
     margin: auto;
     width: 100%;
     background-image: url("./image/bg.png");
