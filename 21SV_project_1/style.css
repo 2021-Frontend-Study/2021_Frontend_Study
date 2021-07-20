@@ -2,6 +2,8 @@
     --top-margin: 80px;
     --top-color: rgb(222, 228, 250);
     --chat-height: 50px;
+    --color-skyblue: rgb(178, 199, 217);
+    --color-yellow: rgb(225, 235, 51);
 }
 @font-face {
     font-family: "gmarket";
@@ -316,7 +318,109 @@ li,ul {
     display: none;
 }
 
-.Sec_2 .project_list ul {
+/* 채팅창 배경 */
+.chatting {
+    background-color: var(--color-skyblue);
+}
+
+/* 채팅창 날짜 */
+.chatDate {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.chatDate::before,
+.chatDate::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 0.5px;
+    margin: 0px 16px;
+}
+
+/* 채팅 시작 */
+.chatting .project_list {
+    margin: 0px 20px;
+}
+
+/* 말풍선 공통 스타일 */
+.chat_qu_col, .chat_an_col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 질문자 채팅 말풍선 */
+.chat_qu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 32px 0;
+}
+
+.avatar_image {
+    margin: 5px;
+    border-radius: 50%;
+    height: var(--chat-height);
+}
+
+.chat__name {
+    margin-left: 22px;
+    text-align: start;
+}
+
+.chat_qu_col .chat__main {
+    padding: 15px 18px;
+    background-color: white;
+    position:relative;
+    margin: 5px 20px;  
+    border-radius: 10px;
+}
+
+.chat_qu_col .chat__main::after {
+    content:"";
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+
+/* 우리의 채팅 말풍선 */
+.chat_an {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.chat_an_col .chat__main {
+    padding: 15px 18px;
+    background-color: var(--color-yellow);
+    position:relative;
+    margin: 5px 20px;  
+    border-radius: 10px;
+    text-align: start;
+}
+.chat_an_col .chat__main::before {
+    content:"";
+    border-top: 15px solid var(--color-yellow);
+    border-left: 0px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+} 
+
+/* .Sec_2 .project_list ul {
     padding: 10px 20px;
     background-color: rgb(228, 231, 188);
 }
@@ -353,7 +457,7 @@ li,ul {
     max-width: 550px;
     padding: 24px 32px;
     border-radius: 40px;
-}
+} */
 
 /* 푸터 */
 footer {
