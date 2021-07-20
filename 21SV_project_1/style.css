@@ -11,6 +11,7 @@ body {
     background-image: url("./image/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x:hidden; 
     overflow-y:auto;
 
@@ -90,7 +91,10 @@ body {
 }
 .sub_text {
     font-size: 21px;
+    
+    display: none;
 }
+
 #dynamic {
     position:relative;
     display: inline-block;

@@ -55,3 +55,13 @@ function upnav() {
     }
 }
 upnav();
+
+
+$( document ).ready( function() {
+    $( '.sub_text' ).delay( 3500 );
+    
+    
+    $( '.sub_text' ).fadeIn(1800);
+
+
+  } );
