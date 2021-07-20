@@ -3,8 +3,12 @@
     --top-color: rgb(222, 228, 250);
     --chat-height: 50px;
 }
-
+@font-face {
+    font-family: "gmarket";
+    src: url("./font/GmarketSansTTFMedium.ttf");
+}
 body {
+    font-family: "gmarket";
     background-color: var(--top-color);
     margin: auto;
     width: 100%;
