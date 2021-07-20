@@ -353,17 +353,29 @@ li,ul {
 
 /* 푸터 */
 footer {
+    /* margin-top: 5%; */
     background-color: rgb(222, 228, 250);
-    height: 150px;
-    width: 100%;
-    bottom: 0;
+    /* height: auto;
+    width: 100%; */
+    padding: 3%;
+    
+    
 }
 .ff {
     text-align: center;
 }
 
+footer .link{
+    margin-bottom: 2%;
+    
+}
+
+/* footer .text{
+    padding: 5%;
+} */
+
 .logo img {
-    margin-top: 20px;
+    margin-bottom: 2%;
     width: 200px;
     height: 50px;
 }
