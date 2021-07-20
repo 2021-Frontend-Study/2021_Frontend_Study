@@ -34,6 +34,8 @@ Choi.addEventListener("click", clickName);
 
 // nameList click color change & motion to list 
 const nameList = document.querySelectorAll(".sec2__nameList li");
+// var div2 = document.querySelectorAll(".sec2__nameList li");
+
 
 function handleClick(event) {
   for (let i = 0; i < nameList.length; i++) {
