@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <title>21SV_Project</title>
 </head>
 
 <body>
+    <script>
+        AOS.init();</script>
     <nav class="Top_Menu">
         <div class="Top__logo">
             <a href="index.html">
@@ -39,10 +45,10 @@
 
             <!-- 활동내용 세션 -->
             <section class="sec_1">
-                <div class="sec1_text">
+                <div class="sec1_text" data-aos="fade-up" data-aos-duration="1000">
                     <h1>우리의 활동 내역</h1>
                     <h2>개별 학습과 팀활동</h2>
-                    <div class="Skill_content">
+                    <div class="Skill_content"  data-aos="fade-up" data-aos-duration="1000">
                         <div class="Skill_image_container html_icon">
                             <i class=" fab fa-html5 fa-7x"></i>
                         </div>
@@ -56,7 +62,7 @@
                 </div>
 
                 <h3>commit</h3>
-                <div class="github_image">
+                <div class="github_image" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mySlides fade">
                         <img src="./image/chanu_commit.png">
                         <!-- <div class="text">Caption Text</div> -->
@@ -78,16 +84,16 @@
 
                 </div>
 
-                <!-- The dots/circles -->
-                <!-- <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span>
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
+                <!-- The dots/circles
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div> -->
 
                 <h3>clonecoding</h3>
 
-                <div class="clonecoding" id="clonecoding">
+                <div class="clonecoding" id="clonecoding" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="nomad">
                         <div class="flip-box">
@@ -101,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="elie">
+                    <div class="elie" >
                         <div class="flip-box">
                             <div class="flip">
                                 <div class="FP">
@@ -140,15 +146,15 @@
                     <div id="project_Shin" class="project_list">
 
                         <ul>
-                            <li class="chat">
+                            <li class="chat" data-aos="fade-up" data-aos-duration="1000">
                                 <img src="image/image_people.jpeg" class="avatar_image">
                                 <div class="basic_chatting">너는 어떤 프로젝트를 했니?</div>
                             </li>
-                            <li class="chat" id="reply">
+                            <li class="chat" id="reply" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="basic_chatting">
                                     글쎄?</div>
                             </li>
-                            <li class="chat" id="reply">
+                            <li class="chat" id="reply" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="basic_chatting">아직 안했어 !<br><br><br><br><br><br><br><br></div>
                             </li>
                         </ul>
@@ -229,6 +235,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/section2.js"></script>
     <script src="./js/commit.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script>
+        AOS.init();</script>
 </body>
 
 </html>
