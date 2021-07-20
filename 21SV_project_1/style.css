@@ -83,6 +83,7 @@ body {
     height: 100vh;
     color: black;
     width: 100%;
+    margin-bottom: 10%;
 }
 .main_text {
     font-size: 4vh;
@@ -126,7 +127,7 @@ body {
 }
 .sec1_text h2 {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 .github_image {
@@ -223,6 +224,7 @@ body {
 }
 
 .clonecoding {
+    margin-top: 10%;
     padding: 10px;
     justify-content: center;
     display: flex;
