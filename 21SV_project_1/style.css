@@ -231,7 +231,7 @@ body {
   }
   
   .clonecoding {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     padding: 10px;
     justify-content: center;
     display: flex;
@@ -253,7 +253,7 @@ body {
     border-radius: 100%;
     width: 300px;
     position:relative;
-    top:190px;
+    top:100px;
     /* transition: all 0.5s;  */
   }
   .nomad .clone_result{
@@ -270,7 +270,7 @@ body {
   
   .nomad:hover .FP{
     position: relative;
-    top:-150px;
+    top:-50px;
     /* width:150px; */
     transform: scale(0.5,0.5);
   }
@@ -282,7 +282,7 @@ body {
   }
   .elie:hover .FP{
     position: relative;
-    top:-150px;
+    top:-50px;
     transition: all 0.5s; 
     transform: scale(0.5,0.5);
   }
