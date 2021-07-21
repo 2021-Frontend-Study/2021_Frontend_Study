@@ -39,7 +39,7 @@ body {
 
 .downdown {
     position: fixed;
-    animation: down 0.3s ease;
+    animation: down 0.8s ease;
 }
 
 @keyframes down {
