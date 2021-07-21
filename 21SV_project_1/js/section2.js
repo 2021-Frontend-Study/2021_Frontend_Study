@@ -17,14 +17,17 @@ function clickName(event) {
     project_Shin.classList.remove(HIDDEN_CLASSNAME);
     project_Lee.classList.add(HIDDEN_CLASSNAME);
     project_Choi.classList.add(HIDDEN_CLASSNAME);
+    AOS.refresh();
   } else if (name === "이세준") {
     project_Shin.classList.add(HIDDEN_CLASSNAME);
     project_Lee.classList.remove(HIDDEN_CLASSNAME);
     project_Choi.classList.add(HIDDEN_CLASSNAME);
+    AOS.refresh();
   } else if (name === "최혜린") {
     project_Shin.classList.add(HIDDEN_CLASSNAME);
     project_Lee.classList.add(HIDDEN_CLASSNAME);
     project_Choi.classList.remove(HIDDEN_CLASSNAME);
+    AOS.refresh();
   }
 }
 
