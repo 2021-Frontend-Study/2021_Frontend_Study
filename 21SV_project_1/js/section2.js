@@ -6,39 +6,53 @@ const Lee = document.querySelector(".project_Lee");
 const Choi = document.querySelector(".project_Choi");
 const HIDDEN_CLASSNAME = "hidden";
 
+function test() {
+  console.log("Test");
+  AOS.refresh();
+}
+
+// 7/22 수정
 function clickName(event) {
   const target = event.target.className;
   const name = document.querySelector(`.${target}`).innerHTML;
   const project_Shin = document.getElementById("project_Shin");
   const project_Lee = document.getElementById("project_Lee");
   const project_Choi = document.getElementById("project_Choi");
-
   if (name === "신찬우") {
-    project_Shin.classList.remove(HIDDEN_CLASSNAME);
-    project_Lee.classList.add(HIDDEN_CLASSNAME);
-    project_Choi.classList.add(HIDDEN_CLASSNAME);
- 
+    // project_Shin.classList.remove(HIDDEN_CLASSNAME);
+    // project_Lee.classList.add(HIDDEN_CLASSNAME);
+    // project_Choi.classList.add(HIDDEN_CLASSNAME);
+    $("#project_Shin").show();
+    $("#project_Lee").hide();
+    $("#project_Choi").hide();
   } else if (name === "이세준") {
-    project_Shin.classList.add(HIDDEN_CLASSNAME);
-    project_Lee.classList.remove(HIDDEN_CLASSNAME);
-    project_Choi.classList.add(HIDDEN_CLASSNAME); 
+    // project_Shin.classList.add(HIDDEN_CLASSNAME);
+    // project_Lee.classList.remove(HIDDEN_CLASSNAME);
+    // project_Choi.classList.add(HIDDEN_CLASSNAME);
+    $("#project_Lee").show();
+    $("#project_Shin").hide();
+    $("#project_Choi").hide();
   } else if (name === "최혜린") {
-    project_Shin.classList.add(HIDDEN_CLASSNAME);
-    project_Lee.classList.add(HIDDEN_CLASSNAME);
-    project_Choi.classList.remove(HIDDEN_CLASSNAME);
-  
+    // project_Shin.classList.add(HIDDEN_CLASSNAME);
+    // project_Lee.classList.add(HIDDEN_CLASSNAME);
+    // project_Choi.classList.remove(HIDDEN_CLASSNAME);
+    $("#project_Shin").hide();
+    $("#project_Lee").hide();
+    $("#project_Choi").show();
   }
-
-  // console.log(target)
-    // console.log(name)
-    $(".project_list").load(location.href + " .project_list");
-    AOS.refresh();
+  // $(".project_list").load(window.location.href + ".project_list");
+  AOS.refresh();
 }
 
-Shin.addEventListener("click", clickName,) ;
-Lee.addEventListener("click", clickName) ;
+// 7/22 추가
+function test1() {
+  clickName(event);
+  test();
+}
+
+Shin.addEventListener("click", clickName);
+Lee.addEventListener("click", clickName);
 Choi.addEventListener("click", clickName);
-// $(".testing").load(location.href + ".testing");
 
 // nameList click color change & motion to list 
 const nameList = document.querySelectorAll(".sec2__nameList li");
@@ -62,9 +76,15 @@ function init() {
 }
 
 init();
-const sec2 = document.querySelector(".sec_2");
 
-sec2.addEventListener("click", () => window.scrollTo({ top: sec2.offsetTop, behavior: 'smooth' }));
+// 7/22 추가
+const Sec2_header = document.querySelector(".Sec2_header");
+const chat_qu = document.querySelector(".chat_qu");
+console.dir(chat_qu);
+console.log(Sec2_header.offsetTop);
+Sec2_header.addEventListener("click", () => window.scrollTo({ top: Sec2_header.offsetTop, behavior: 'smooth' }));
+chat_qu.addEventListener("click", () => window.scrollTo({ top: chat_qu.offsetTop, behavior: 'smooth' }));
+
 
 // chatting date 
 function getDate() {
@@ -87,7 +107,7 @@ function getClock() {
     const element = chat__clock[i];
     const date = new Date();
     let hours = date.getHours();
-    const minutes = date.getMinutes();
+    const minutes = String(date.getMinutes()).padStart(2, "0");
     let hour_12 = "오전";
     if (hours >= 12) {
       hours = hours - 12;
