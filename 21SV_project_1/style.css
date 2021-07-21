@@ -223,6 +223,7 @@ body {
 
 
 /*폰트 변경 가능*/
+/*폰트 변경 가능*/
 .sec_1 h3 {
     margin-top: 80px;
     margin-bottom: 30px;
@@ -236,6 +237,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 10%;
+    overflow: hidden;
   }
   .nomad {
     margin-right: 200px;
@@ -244,48 +246,52 @@ body {
     width: 500px;
     height: 480px;
   }
-  
-  
+  .FP{
+    transition: all 0.5s; 
+  }
   .FP img{
     border-radius: 100%;
     width: 300px;
     position:relative;
     top:190px;
-    transition: all 0.2s;
+    /* transition: all 0.5s;  */
   }
   .nomad .clone_result{
     /* display: block;
       position: relative; 
     left:-800px; */
     opacity: 0;
-    
-    
+    transition: all 0.1s; 
   }
   .elie .clone_result{
     opacity: 0;
-  
+    transition: all 0.1s; 
   }
   
   .nomad:hover .FP{
     position: relative;
-    top:-300px;
+    top:-150px;
+    /* width:150px; */
+    transform: scale(0.5,0.5);
   }
   
   .nomad:hover .clone_result{
     /* right:800px; */
     opacity: 1;
-   
+    transition: all 0.5s;
   }
   .elie:hover .FP{
     position: relative;
-    top:-300px;
+    top:-150px;
+    transition: all 0.5s; 
+    transform: scale(0.5,0.5);
   }
   .elie:hover .clone_result{
     /* display: block;
     position: relative; */
     /* right: -800px; */
     opacity:1;
-    
+   transition: all 0.5s; 
   }
   
 
