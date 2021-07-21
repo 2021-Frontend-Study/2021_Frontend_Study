@@ -227,30 +227,67 @@ body {
     margin-top: 80px;
     margin-bottom: 30px;
     text-align: center; 
-}
-
-.clonecoding {
+  }
+  
+  .clonecoding {
     margin-top: 10%;
     padding: 10px;
     justify-content: center;
     display: flex;
     flex-direction: row;
     margin-bottom: 10%;
-}
-.nomad {
+  }
+  .nomad {
     margin-right: 200px;
-}
-.clone_result img {
+  }
+  .clone_result img {
     width: 500px;
     height: 480px;
-
-}
-
-.FP img {
+  }
+  
+  
+  .FP img{
     border-radius: 100%;
-    width: 125px;
-    height: 125px;
-}
+    width: 300px;
+    position:relative;
+    top:190px;
+    transition: all 0.2s;
+  }
+  .nomad .clone_result{
+    /* display: block;
+      position: relative; 
+    left:-800px; */
+    opacity: 0;
+    
+    
+  }
+  .elie .clone_result{
+    opacity: 0;
+  
+  }
+  
+  .nomad:hover .FP{
+    position: relative;
+    top:-300px;
+  }
+  
+  .nomad:hover .clone_result{
+    /* right:800px; */
+    opacity: 1;
+   
+  }
+  .elie:hover .FP{
+    position: relative;
+    top:-300px;
+  }
+  .elie:hover .clone_result{
+    /* display: block;
+    position: relative; */
+    /* right: -800px; */
+    opacity:1;
+    
+  }
+  
 
 /*언어 이미지*/
 .Skill_image_container {
@@ -465,7 +502,7 @@ footer .link{
 }
 
 
-
+/* 
 .flip-box:hover .flip {
     transform: rotateY(-180deg);
   }
@@ -485,7 +522,7 @@ footer .link{
     width: 500px;
     height: 480px;
   }
-  
+   */
   /* .choi img,
   .chan img,
   .lee img
