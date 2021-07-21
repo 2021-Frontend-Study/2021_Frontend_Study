@@ -482,9 +482,6 @@ footer .link{
     
 }
 
-/* footer .text{
-    padding: 5%;
-} */
 
 .logo img {
     margin-bottom: 2%;
@@ -501,42 +498,6 @@ footer .link{
     
 }
 
-
-/* 
-.flip-box:hover .flip {
-    transform: rotateY(-180deg);
-  }
-  .flip {
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: .5s;
-  }
-  
-  .FP,
-  .clone_result{
-    backface-visibility: hidden;
-  }
-  
-  .clone_result{
-    transform: rotateY(180deg);
-    width: 500px;
-    height: 480px;
-  }
-   */
-  /* .choi img,
-  .chan img,
-  .lee img
-  {
-    transform:scale(1);
-    transition:.3s;
-  }
-  
-  .choi:hover img ,
-  .chan:hover img ,
-  .lee:hover img 
-  {
-    transform:scale(1.2);
-  } */
   .Top__sections li:hover{
     color:yellow;
     text-decoration: underline;
