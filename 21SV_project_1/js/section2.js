@@ -17,23 +17,28 @@ function clickName(event) {
     project_Shin.classList.remove(HIDDEN_CLASSNAME);
     project_Lee.classList.add(HIDDEN_CLASSNAME);
     project_Choi.classList.add(HIDDEN_CLASSNAME);
-    AOS.refresh();
+ 
   } else if (name === "이세준") {
     project_Shin.classList.add(HIDDEN_CLASSNAME);
     project_Lee.classList.remove(HIDDEN_CLASSNAME);
-    project_Choi.classList.add(HIDDEN_CLASSNAME);
-    AOS.refresh();
+    project_Choi.classList.add(HIDDEN_CLASSNAME); 
   } else if (name === "최혜린") {
     project_Shin.classList.add(HIDDEN_CLASSNAME);
     project_Lee.classList.add(HIDDEN_CLASSNAME);
     project_Choi.classList.remove(HIDDEN_CLASSNAME);
-    AOS.refresh();
+  
   }
+
+  // console.log(target)
+    // console.log(name)
+    $(".project_list").load(location.href + " .project_list");
+    AOS.refresh();
 }
 
-Shin.addEventListener("click", clickName);
-Lee.addEventListener("click", clickName);
+Shin.addEventListener("click", clickName,) ;
+Lee.addEventListener("click", clickName) ;
 Choi.addEventListener("click", clickName);
+// $(".testing").load(location.href + ".testing");
 
 // nameList click color change & motion to list 
 const nameList = document.querySelectorAll(".sec2__nameList li");
