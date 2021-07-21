@@ -353,6 +353,12 @@ li,ul {
     position: relative;
 }
 
+.chat__clock {
+    align-self: flex-end;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
 /* 질문자 채팅 말풍선 */
 .chat_qu {
     display: flex;
@@ -377,7 +383,7 @@ li,ul {
     padding: 15px 18px;
     background-color: white;
     position:relative;
-    margin: 5px 20px;  
+    margin: 5px 5px 5px 20px;  
     border-radius: 10px;
 }
 
@@ -405,7 +411,7 @@ li,ul {
     padding: 15px 18px;
     background-color: var(--color-yellow);
     position:relative;
-    margin: 5px 20px;  
+    margin: 5px 20px 5px 5px;
     border-radius: 10px;
     text-align: start;
 }
