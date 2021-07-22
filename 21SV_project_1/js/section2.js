@@ -4,12 +4,7 @@
 const Shin = document.querySelector(".project_Shin");
 const Lee = document.querySelector(".project_Lee");
 const Choi = document.querySelector(".project_Choi");
-const HIDDEN_CLASSNAME = "hidden";
 
-function test() {
-  console.log("Test");
-  AOS.refresh();
-}
 
 // 7/22 수정
 function clickName(event) {
@@ -19,23 +14,17 @@ function clickName(event) {
   const project_Lee = document.getElementById("project_Lee");
   const project_Choi = document.getElementById("project_Choi");
   if (name === "신찬우") {
-    // project_Shin.classList.remove(HIDDEN_CLASSNAME);
-    // project_Lee.classList.add(HIDDEN_CLASSNAME);
-    // project_Choi.classList.add(HIDDEN_CLASSNAME);
+
     $("#project_Shin").show();
     $("#project_Lee").hide();
     $("#project_Choi").hide();
   } else if (name === "이세준") {
-    // project_Shin.classList.add(HIDDEN_CLASSNAME);
-    // project_Lee.classList.remove(HIDDEN_CLASSNAME);
-    // project_Choi.classList.add(HIDDEN_CLASSNAME);
+
     $("#project_Lee").show();
     $("#project_Shin").hide();
     $("#project_Choi").hide();
   } else if (name === "최혜린") {
-    // project_Shin.classList.add(HIDDEN_CLASSNAME);
-    // project_Lee.classList.add(HIDDEN_CLASSNAME);
-    // project_Choi.classList.remove(HIDDEN_CLASSNAME);
+
     $("#project_Shin").hide();
     $("#project_Lee").hide();
     $("#project_Choi").show();
@@ -44,11 +33,7 @@ function clickName(event) {
   AOS.refresh();
 }
 
-// 7/22 추가
-function test1() {
-  clickName(event);
-  test();
-}
+
 
 Shin.addEventListener("click", clickName);
 Lee.addEventListener("click", clickName);
@@ -79,12 +64,21 @@ init();
 
 // 7/22 추가
 const Sec2_header = document.querySelector(".Sec2_header");
-const chat_qu = document.querySelector(".chat_qu");
-console.dir(chat_qu);
-console.log(Sec2_header.offsetTop);
-Sec2_header.addEventListener("click", () => window.scrollTo({ top: Sec2_header.offsetTop, behavior: 'smooth' }));
-chat_qu.addEventListener("click", () => window.scrollTo({ top: chat_qu.offsetTop, behavior: 'smooth' }));
+// const chat_qu = document.querySelector(".chat_qu");
 
+// console.dir(chat_qu);
+// console.log(Sec2_header.offsetTop);
+
+// Sec2_header.addEventListener("click", () => window.scrollTo({ top: Sec2_header.offsetTop, behavior: 'smooth' }));
+// chat_qu.addEventListener("click", () => window.scrollTo({ top: chat_qu.offsetTop, behavior: 'smooth' }));
+
+function moving(){
+ 
+  console.log("tesing")
+  window.scrollTo({top :  Sec2_header.offsetTop-300})
+
+}
+Sec2_header.addEventListener("click", moving)
 
 // chatting date 
 function getDate() {
