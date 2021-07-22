@@ -29,10 +29,9 @@ function clickName(event) {
     $("#project_Lee").hide();
     $("#project_Choi").show();
   }
-  // $(".project_list").load(window.location.href + ".project_list");
+
   AOS.refresh();
 }
-
 
 
 Shin.addEventListener("click", clickName);
@@ -41,7 +40,6 @@ Choi.addEventListener("click", clickName);
 
 // nameList click color change & motion to list 
 const nameList = document.querySelectorAll(".sec2__nameList li");
-// var div2 = document.querySelectorAll(".sec2__nameList li");
 
 
 function handleClick(event) {
@@ -64,21 +62,18 @@ init();
 
 // 7/22 추가
 const Sec2_header = document.querySelector(".Sec2_header");
-// const chat_qu = document.querySelector(".chat_qu");
-
-// console.dir(chat_qu);
-// console.log(Sec2_header.offsetTop);
-
-// Sec2_header.addEventListener("click", () => window.scrollTo({ top: Sec2_header.offsetTop, behavior: 'smooth' }));
-// chat_qu.addEventListener("click", () => window.scrollTo({ top: chat_qu.offsetTop, behavior: 'smooth' }));
-
+const sec2__nameList = document.querySelector(".sec2__nameList");
 function moving(){
- 
-  console.log("tesing")
-  window.scrollTo({top :  Sec2_header.offsetTop-300})
+  window.scrollTo({top :  Sec2_header.offsetTop-383.4});
 
 }
+function moving2(){
+  window.scrollTo({top :  sec2__nameList.offsetTop-500});
+}
+//택 1
 Sec2_header.addEventListener("click", moving)
+
+Sec2_header.addEventListener("click", moving2)
 
 // chatting date 
 function getDate() {
