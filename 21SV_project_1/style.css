@@ -109,7 +109,7 @@ li span::after {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
   margin-top: var(--top-margin);
 }
 
@@ -252,8 +252,8 @@ li span::after {
 
 .github_image img {
   border-radius: 8%;
-  width: 70%;
-  height: 50%;
+  width: 55%;
+  height: 35%;
   margin-bottom: 3%;
 }
 
@@ -267,19 +267,29 @@ li span::after {
 
 .clonecoding {
   /* margin-top: 10%; */
-  padding: 10px;
+  padding: 10%;
   justify-content: center;
   display: flex;
   flex-direction: row;
   margin-bottom: 10%;
   overflow: hidden;
+  max-width: 80%;
 }
 .nomad {
-  margin-right: 200px;
+  margin-right: 20%;
+  max-width: 50%;
+}
+.elie {
+  max-width: 50%;
 }
 .clone_result img {
-  width: 500px;
-  height: 480px;
+  width: 40vw;
+  height: 100vh;
+}
+.elie .clone_result img {
+  /* width: 80%; */
+  /* width: 50vh;
+  height: 30vh; */
 }
 .FP {
   transition: all 0.5s;
@@ -503,6 +513,10 @@ ul {
   position: absolute;
   top: 10px;
   right: -15px;
+}
+
+.chat_project  {
+  width: 100%;
 }
 
 /* 푸터 */
