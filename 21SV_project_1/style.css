@@ -63,13 +63,45 @@ body {
   list-style: none;
   padding: 0;
 }
-
-.Top__sections li {
+.Top__sections li{
   padding-right: 20px;
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  color:black;
+  transition:all .3s ease 
 }
+.sectionList li:hover{
+  color:#A390EE;
+  transition:all .3s ease 
+} 
+li span
+{ 
+position:relative }
+
+li span::after {
+    content: '';
+    width: 0%;
+    left: 50%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    margin-top: 3px;
+    border-bottom: 2px solid #A390EE;
+    transition:all .3s ease;
+  }
+  li:hover  span::after {
+    content: '';
+    width: 100%;
+    left: 0px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    margin-top: 3px;
+    border-bottom: 2px solid #A390EE;
+    transition:all .3s ease;
+  }
 
 /* 본문 */
 .container {
@@ -495,15 +527,3 @@ footer .link {
   height: 50px;
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-}
-
-.link a:hover {
-  color: aquamarine;
-}
-
-.Top__sections li:hover {
-  color: yellow;
-  text-decoration: underline;
-}
