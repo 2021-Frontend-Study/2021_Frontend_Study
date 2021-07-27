@@ -493,7 +493,7 @@ ul {
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 15px 0;
+  margin: 32px 0;
 }
 
 .chat_an_col .chat__main {
