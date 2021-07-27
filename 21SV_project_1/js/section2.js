@@ -61,19 +61,20 @@ function init() {
 init();
 
 // 7/22 추가
-const Sec2_header = document.querySelector(".Sec2_header");
+// const Sec2_header = document.querySelector(".Sec2_header");
 const sec2__nameList = document.querySelector(".sec2__nameList");
-function moving(){
-  window.scrollTo({top :  Sec2_header.offsetTop-383.4});
+// function moving(){
+//   window.scrollTo({top :  Sec2_header.offsetTop-383.4});
 
-}
+// }
+
 function moving2(){
-  window.scrollTo({top :  sec2__nameList.offsetTop-500});
+  window.scrollTo({top :  sec2__nameList.offsetTop-471.3});
 }
 //택 1
-Sec2_header.addEventListener("click", moving)
+// Sec2_header.addEventListener("click", moving)
 
-Sec2_header.addEventListener("click", moving2)
+sec2__nameList.addEventListener("click", moving2)
 
 // chatting date 
 function getDate() {
